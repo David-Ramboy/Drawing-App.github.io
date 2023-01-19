@@ -53,9 +53,10 @@ function addBox(currentBoxvalue){
             boxes.forEach((box)=>{
                 box.addEventListener(event, (e) => {
                     if(numTxt.textContent == "off"){
-                        // box.removeEventListener()
+                         //box.removeEventListener()
                         // if(!box.removeEventListener()){
                             mouseover =! mouseover
+                       
                         // }
                     }
                     let target = e.currentTarget;
@@ -87,3 +88,6 @@ function addBox(currentBoxvalue){
 }
 addBox(16)
 
+function refreshFunc(){
+window.location.reload()
+}
